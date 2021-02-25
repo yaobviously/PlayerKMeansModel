@@ -13,6 +13,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 
 # Calculating features to classify players
+players21 = pd.read_csv(r'https://raw.githubusercontent.com/yaobviously/playerboxkmeans/main/boxscoresoutfeb25.csv')
 
 totals = players21.groupby('Player').agg({'GameID': 'count',
                                  'PlayerFP' : 'sum',
