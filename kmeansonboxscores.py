@@ -48,7 +48,7 @@ for k in range(1,12):
     model.fit(totals)
     inertias.append(model.inertia_)
 
-plt.scatter(range(1,12), inertias)
+plt.plot(range(1,12), inertias, '-o')
 
 # Clustering players and assigning labels
 
