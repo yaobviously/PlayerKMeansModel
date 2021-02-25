@@ -45,7 +45,7 @@ inertias = []
 for k in range(1,12):
     
     model = KMeans(n_clusters = k)
-    model.fit(totarr)
+    model.fit(totals)
     inertias.append(model.inertia_)
 
 plt.scatter(range(1,12), inertias)
