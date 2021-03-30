@@ -53,7 +53,7 @@ plt.plot(range(1,12), inertias, '-o')
 # Clustering players and assigning labels
 
 scaler = StandardScaler()
-model = KMeans(n_clusters=4)
+model = KMeans(n_clusters=3)
 pipeline = make_pipeline(scaler, model)
 
 labels = pipeline.fit_predict(totals)
